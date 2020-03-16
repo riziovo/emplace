@@ -87,6 +87,7 @@ public class SellerHead implements BaseEntity{
 	@JsonIgnore
 	public DP dp;
 	
+	
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name ="SELLERS_SUBCATEGORIES",
 		joinColumns = @JoinColumn(name="M_SELLER_ID"),
